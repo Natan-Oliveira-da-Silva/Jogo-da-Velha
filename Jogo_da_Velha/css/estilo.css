@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+#jogo_inteiro {
+  display: flex;
+  background:transparent;
+  height:370px;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  justify-content:center;
+}
+p{
+  margin:0;
+}
+.sem_vitoria {
+  background-color: transparent;
+}
+.com_vitoria {
+  background-color: rgb(165, 248, 165);
+}
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(76, 76, 76);
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  background-color: rgb(58, 58, 58);
+  cursor: pointer;
+  padding: 9px;
+  box-shadow: none;
+  font-size: 22px;
+}
+button:active {
+  color: rgb(193, 193, 193);
+  padding: 6px;
+  font-size: 20px;
+}
+body {
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+#linha1,
+#linha2 {
+  border-bottom: 8px solid gray;
+}
+#c_0,
+#c_3,
+#c_6,
+#c_1,
+#c_4,
+#c_7 {
+  border-right: 8px solid gray;
+}
+#c_0,
+#c_1,
+#c_2,
+#c_3,
+#c_4,
+#c_5,
+#c_6,
+#c_7,
+#c_8 {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#linha1,
+#linha2,
+#linha3 {
+  display: flex;
+  flex-direction: row;
+}
+.pergunta_dos_nomes {
+  background-color: rgb(214, 254, 254);
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(208, 255, 139);
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  bottom: 285px;
+  display:none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pergunta_dos_nomes input {
+  background-color: transparent;
+  border-bottom: 2px solid rgb(45, 45, 45);
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 23px;
+  outline: 0;
+  width: 100px;
+}
+.pergunta_dos_nomes button {
+  background-color: green;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top:20px;
+}
+.pergunta_dos_nomes button:hover {
+  background-color: rgb(0, 81, 0);
+}
+#o_todo {
+  display: flex;
+  flex-direction: row;
+  background:transparent;
+}
+#botoes_e_quadro {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  height:370px;
+  width:350px;
+  justify-content:space-between;
+  margin-right:70px;
+}
+.classe_dos_escondidos{
+  display:none;
+}
+#contraumamigo{
+  display:none;
+}

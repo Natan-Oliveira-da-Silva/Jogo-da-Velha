@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <h1 style="font-size: 50px">Jogo da Velha</h1>
+    <div id="o_todo">
+      <div id="botoes_e_quadro">
+        <p id="comentario_interessante" style="font-size: 30px; color: black">
+          É você contra o seu amigo.<br />O jogador <span
+          style="
+            font-weight: 700;
+            color: blue;
+            font-family: 'Montserrat', sans-serif;
+          "
+          >X</span> começa.
+        </p>
+
+        <p style="font-size: 27px">
+          <span id="player1"> Jogador A</span>
+          <img height="20px" width="40px" src="icones/seta-direita.png" />
+          <span
+            style="
+              font-weight: 700;
+              color: red;
+              font-family: 'Montserrat', sans-serif;
+            "
+            >O</span
+          >
+        </p>
+        <p style="font-size: 27px">
+          <span id="player2">Jogador B</span>
+          <img height="20px" width="40px" src="icones/seta-direita.png" />
+          <span
+            style="
+              font-weight: 700;
+              color: blue;
+              font-family: 'Montserrat', sans-serif;
+            "
+            >X</span
+          >
+        </p>
+        <button id="botao_que_muda_os_nomes" onclick="mudar_os_nomes()">
+          Mudar os nomes
+        </button>
+        <button id="contraopc" onclick="botao_de_jogar_contra_o_pc();">
+          Jogar contra o PC
+        </button>
+        <button id="contraumamigo" onclick="botao_de_jogar_contra_um_amigo();">
+          Jogar contra um amigo
+        </button>
+        <button onclick="reiniciar()">Reiniciar jogo</button>
+      </div>
+      <div style="background: transparent">
+        <div id="jogo_inteiro">
+          <div id="linha1">
+            <div
+              id="c_0"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(0)"
+            ></div>
+            <div
+              id="c_1"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(1)"
+            ></div>
+            <div
+              id="c_2"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(2)"
+            ></div>
+          </div>
+          <div id="linha2">
+            <div
+              id="c_3"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(3)"
+            ></div>
+            <div
+              id="c_4"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(4)"
+            ></div>
+            <div
+              id="c_5"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(5)"
+            ></div>
+          </div>
+          <div id="linha3">
+            <div
+              id="c_6"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(6)"
+            ></div>
+            <div
+              id="c_7"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(7)"
+            ></div>
+            <div
+              id="c_8"
+              class="sem_vitoria"
+              onmousedown="pre_marcar_casa(8)"
+            ></div>
+          </div>
+        </div>
+        <div id="quadro_dos_nomes" class="pergunta_dos_nomes">
+          <h2 style="font-size: 20px">Informe os nomes dos jogadores:</h2>
+          <p style="color: red" id="recadinho"></p>
+          <p>
+            Jogador
+            <span
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: red;
+                font-weight: 700;
+              "
+              >O</span
+            >
+            : <input id="jogador_A" placeholder="Nome" />
+          </p>
+
+          <p>
+            Jogador
+            <span
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: blue;
+                font-weight: 700;
+              "
+              >X</span
+            >
+            : <input id="jogador_B" placeholder="Nome" />
+          </p>
+          <button id="botao_de_pronto" onclick="pronto()">Pronto!</button>
+        </div>
+      </div>
+
+      <br />
+    </div>
+    <div>
+      <br /><br />
+      <p id="creditos_do_desenvolvedor">
+        Desenvolvido por Natan Oliveira da Silva em 07/03/2024.
+      </p>
+    </div>
+    <script src="javascript/parte_do_javascript.js"></script>
+  </body>
+  <footer>
+    
+  </footer>
+</html>
